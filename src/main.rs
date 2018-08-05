@@ -9,7 +9,7 @@ fn main() {
     println!("{}", s);
 
     println!("The length of '{}' is {}.", s1, len); // s1 is still in scope here
-}   // Here, s1 goes out of scope, along with len.
+}   // Here, s goes out of scope, along with s1 and len.
 
 fn calculate_length(s: &String) -> usize {  // s is a reference to a String
     s.len()
